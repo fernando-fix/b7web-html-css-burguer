@@ -6,6 +6,7 @@
     list-style: none;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
 }
 
 body {
@@ -100,11 +101,86 @@ header .menu-icon div {
     background-color: #fff;
 }
 
+/* HERO */
+.hero .container {
+    display: flex;
+}
+
+.here .rightside,
+.here .leftside {
+    flex: 1;
+}
+
+.hero .leftside {
+    padding-bottom: 150px;
+}
+
+.hero .rightside {
+    text-align: center;
+}
+
+.hero .rightside img {
+    width: auto;
+    height: 600px;
+}
+
+.hero h1 {
+    font-family: 'Calistoga';
+    font-size: 72px;
+    line-height: 80px;
+    margin-top: 50px;
+}
+
+.hero p {
+    font-size: 20px;
+    line-height: 26px;
+    margin: 40px 0;
+}
+
+.hero .button {
+    display: inline-block;
+    background-color: #FE6A0F;
+    font-weight: 500;
+    color: #fff;
+    padding: 15px 80px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.hero .button:hover {
+    opacity: 0.8;
+}
+
+/* RESPOSIVE */
+
 @media (max-width: 820px) {
     header nav {
         display: none;
     }
+
     header .menu {
         display: flex;
+    }
+
+    .hero .container {
+        flex-direction: column;
+    }
+
+    .hero .leftside {
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    .hero .rightside {
+        padding-bottom: 40px;
+    }
+
+    .hero .rightside img {
+        height: 300px;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+
     }
 }
